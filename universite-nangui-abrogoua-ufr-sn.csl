@@ -16,7 +16,7 @@
     <category field="science"/>
     <category field="zoology"/>
     <updated>2020-04-03T09:57:47+00:00</updated>
-    <rights license="http://creativecommons.org/licenses/by-sa/3.0/">This work is licensed under a Creative Commons Attribution-ShareAlike 3.0 License</rights>
+    <rights license="https://creativecommons.org/licenses/by-sa/4.0/">This work is licensed under a Creative Commons Attribution-ShareAlike 3.0 License</rights>
   </info>
   <locale>
     <terms>
@@ -76,6 +76,7 @@
   </macro>
   <macro name="author-short">
     <names variable="author">
+      <et-al term="and others" font-style="italic"/>
       <name form="short" and="text" initialize-with=". "/>
       <substitute>
         <names variable="editor"/>
