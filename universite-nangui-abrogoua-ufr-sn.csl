@@ -22,10 +22,7 @@
     <terms>
       <term name="and">et</term>
       <term name="et-al">et al.</term>
-      <term name="page">
-      <single>page</single>
-      <multiple>pages</multiple>
-      </terms>
+    </terms>
   </locale>
   <macro name="container-contributors">
     <choose>
