@@ -76,8 +76,8 @@
   </macro>
   <macro name="author-short">
     <names variable="author">
-      <et-al term="and others" font-style="italic"/>
       <name form="short" and="text" initialize-with=". "/>
+      <et-al term="and others" font-style="italic"/>
       <substitute>
         <names variable="editor"/>
         <names variable="translator"/>
@@ -123,8 +123,8 @@
           </if>
           <else>
             <group>
-              <text term="retrieved" text-case="capitalize-first" suffix=" "/>
-              <text term="from" suffix=" "/>
+              <text term="obtenu" text-case="capitalize-first" suffix=" "/>
+              <text term="de" suffix=" "/>
               <text variable="URL"/>
             </group>
           </else>
@@ -137,18 +137,18 @@
             <choose>
               <if type="webpage">
                 <group delimiter=" ">
-                  <text term="retrieved" text-case="capitalize-first" suffix=" "/>
+                  <text term="obtenu" text-case="capitalize-first" suffix=" "/>
                   <group>
-                    <date variable="accessed" form="text" suffix=", "/>
+                    <date variable="visité" form="text" suffix=", "/>
                   </group>
-                  <text term="from"/>
+                  <text term="de"/>
                   <text variable="URL"/>
                 </group>
               </if>
               <else>
                 <group>
-                  <text term="retrieved" text-case="capitalize-first" suffix=" "/>
-                  <text term="from" suffix=" "/>
+                  <text term="obtenu" text-case="capitalize-first" suffix=" "/>
+                  <text term="de" suffix=" "/>
                   <text variable="URL"/>
                 </group>
               </else>
