@@ -575,6 +575,7 @@
       <key macro="title"/>
     </sort>
     <layout>
+      <group suffix=".">
       <group suffix=",">
         <group>
           <text macro="author"/>
