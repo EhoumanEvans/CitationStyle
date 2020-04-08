@@ -412,7 +412,7 @@
       <if type="article-journal article-magazine" match="any">
         <group delimiter=". " prefix=". ">
           <group>
-            <text variable="volume" font-style="normal" font-weight="bold" suffix=" "/>
+            <text variable="volume" font-style="normal" font-weight="bold"  suffix=" "/>
             <text variable="issue" prefix="(" suffix=")"/>
           </group>
           <text variable="page" form="short" strip-periods="false"/>
@@ -576,8 +576,7 @@
     </sort>
     <layout>
       <group suffix=".">
-      <group suffix=",">
-        <group>
+        <group suffix=",">
           <text macro="author"/>
           <text macro="issued"/>
           <text macro="title-plus-extra"/>
