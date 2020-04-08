@@ -279,7 +279,7 @@
                  </else>
                </choose>
                <text variable="publisher"/>
-               <text variable="number-of-pages" prefix="p. "/>
+               <text variable="number-of-pages" suffix="p. "/>
                <text variable="ISBN" prefix="ISBN: "/>
              </group>
            </if>
