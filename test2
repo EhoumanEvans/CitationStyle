@@ -1,25 +1,27 @@
 <?xml version="1.0" encoding="utf-8"?>
-<style xmlns="http://purl.org/net/xbiblio/csl" class="in-text" version="1.0" demote-non-dropping-particle="never" default-locale="fr-FR">
+<style xmlns="http://purl.org/net/xbiblio/csl" class="in-text" version="1.0" demote-non-dropping-particle="never">
   <info>
-    <title>Université Nangui Abrogoua-UFR SN-APA</title>
-    <title-short>UNA SN</title-short>
-    <id>http://www.zotero.org/styles/universite-nangui-abrogoua-ufr-sn</id>
-    <link href="http://www.zotero.org/styles/universite-nangui-abrogoua-ufr-sn" rel="self"/>
+    <title>Česká zemědělská univerzita v Praze - Fakulta agrobiologie, potravinových a přírodních zdrojů - Evans Ehouman, PhD Student</title>
+    <title-short>FAPPZ ČZU</title-short>
+    <id>http://csl.mendeley.com/styles/18459701/ceska-zemedelska-univerzita-v-praze-fakulta-agrobiologie-potravinovych-a-prirodnich-zdroju-5</id>
+    <link href="http://www.zotero.org/styles/ceska-zemedelska-univerzita-v-praze-fakulta-agrobiologie-potravinovych-a-prirodnich-zdroju" rel="self"/>
     <link href="http://www.zotero.org/styles/apa" rel="template"/>
-    <link href="https://github.com/EhoumanEvans/CitationStyle/universite_nangui_abrogoua_ufr_sn_citation_style.pdf" rel="documentation"/>
+    <link href="http://studium.agrobiologie.cz/Nastenka_studijniho_oddeleni/Bakalarske_a_diplomove_prace/Zavazna_pravidla_citace_seznamy_pouzite_literatury.pdf" rel="documentation"/>
     <contributor>
-      <name>Ehouman Evans, PhD</name>
-      <email>ehoumanevans@gmail.com</email>
+      <name>Matěj Božik</name>
+      <email>bozik@af.czu.cz</email>
+    </contributor>
+    <contributor>
+      <name>Evans Ehouman, PhD Student</name>
+      <uri>https://www.mendeley.com/profiles/evans-ehouman/</uri>
     </contributor>
     <category citation-format="author-date"/>
     <category field="botany"/>
     <category field="science"/>
     <category field="zoology"/>
-    <updated>2020-04-07T09:57:47+00:00</updated>
+    <updated>2020-04-07T22:01:55+00:00</updated>
     <rights license="http://creativecommons.org/licenses/by-sa/3.0/">This work is licensed under a Creative Commons Attribution-ShareAlike 3.0 License</rights>
   </info>
-
-
   <locale>
     <terms>
       <term name="and">et</term>
