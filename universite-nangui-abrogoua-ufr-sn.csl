@@ -58,7 +58,7 @@
   </macro>
   <macro name="author">
     <names variable="author">
-      <name delimiter-precedes-last="always" initialize-with=". " name-as-sort-order="all" sort-separator=" "/>
+      <name delimiter=" &amp; " delimiter-precedes-last="always" initialize-with=". " name-as-sort-order="all" sort-separator=" "/>
       <label form="short" prefix=" (" suffix=")" text-case="capitalize-first"/>
       <substitute>
         <names variable="editor"/>
@@ -124,8 +124,8 @@
           </if>
           <else>
             <group>
-              <text term="obtenu" text-case="capitalize-first" suffix=" "/>
-              <text term="de" suffix=" "/>
+              <text term="retrieved" text-case="capitalize-first" suffix=" "/>
+              <text term="from" suffix=" "/>
               <text variable="URL"/>
             </group>
           </else>
@@ -138,18 +138,18 @@
             <choose>
               <if type="webpage">
                 <group delimiter=" ">
-                  <text term="obtenu" text-case="capitalize-first" suffix=" "/>
+                  <text term="retrieved" text-case="capitalize-first" suffix=" "/>
                   <group>
-                    <date variable="visité" form="text" suffix=", "/>
+                    <date variable="accessed" form="text" suffix=", "/>
                   </group>
-                  <text term="de"/>
+                  <text term="from"/>
                   <text variable="URL"/>
                 </group>
               </if>
               <else>
                 <group>
-                  <text term="obtenu" text-case="capitalize-first" suffix=" "/>
-                  <text term="de" suffix=" "/>
+                  <text term="retrieved" text-case="capitalize-first" suffix=" "/>
+                  <text term="from" suffix=" "/>
                   <text variable="URL"/>
                 </group>
               </else>
