@@ -320,7 +320,7 @@
         <choose>
           <if variable="issued">
             <group prefix=" ">
-              <date variable="issued" font-weight="bold" prefix="(" suffix="). ">
+              <date variable="issued" prefix="(" suffix="). ">
                 <date-part name="year"/>
               </date>
               <text variable="year-suffix"/>
@@ -410,7 +410,7 @@
   <macro name="locators">
     <choose>
       <if type="article-journal article-magazine" match="any">
-        <group delimiter=". " prefix=". ">
+        <group delimiter=". " prefix=" ">
           <group>
             <text variable="volume" font-style="normal" font-weight="bold"  suffix=" "/>
             <text variable="issue" prefix="(" suffix=")"/>
