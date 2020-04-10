@@ -21,8 +21,7 @@
   <locale>
     <terms>
       <term name="and">et</term>
-
-
+      <term name="et-al">et al.</term>
     </terms>
   </locale>
   <macro name="container-contributors">
@@ -79,8 +78,7 @@
   <macro name="author-short">
     <names variable="author">
       <name form="short" and="symbol" initialize-with=". "/>
-
-
+       <et-al term="et-al" font-style="italic"/>
       <substitute>
         <names variable="editor"/>
         <names variable="translator"/>
