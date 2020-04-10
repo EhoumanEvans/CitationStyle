@@ -1,26 +1,29 @@
 <?xml version="1.0" encoding="utf-8"?>
-<style xmlns="http://purl.org/net/xbiblio/csl" class="in-text" version="1.0" demote-non-dropping-particle="never">
+<style xmlns="http://purl.org/net/xbiblio/csl" class="in-text" version="1.0" demote-non-dropping-particle="never" default-locale="fr-FR">
   <info>
-    <title>Česká zemědělská univerzita v Praze - Fakulta agrobiologie, potravinových a přírodních zdrojů</title>
-    <title-short>FAPPZ ČZU</title-short>
-    <id>http://www.zotero.org/styles/ceska-zemedelska-univerzita-v-praze-fakulta-agrobiologie-potravinovych-a-prirodnich-zdroju</id>
-    <link href="http://www.zotero.org/styles/ceska-zemedelska-univerzita-v-praze-fakulta-agrobiologie-potravinovych-a-prirodnich-zdroju" rel="self"/>
+    <title>Université Nangui Abrogoua-UFR SN-APA</title>
+    <title-short>UNA SN</title-short>
+    <id>http://www.zotero.org/styles/universite-nangui-abrogoua-ufr-sn</id>
+    <link href="http://www.zotero.org/styles/universite-nangui-abrogoua-ufr-sn" rel="self"/>
     <link href="http://www.zotero.org/styles/apa" rel="template"/>
-    <link href="http://studium.agrobiologie.cz/Nastenka_studijniho_oddeleni/Bakalarske_a_diplomove_prace/Zavazna_pravidla_citace_seznamy_pouzite_literatury.pdf" rel="documentation"/>
+    <link href="https://github.com/EhoumanEvans/CitationStyle/universite_nangui_abrogoua_ufr_sn_citation_style.pdf" rel="documentation"/>
     <contributor>
-      <name>Matěj Božik</name>
-      <email>bozik@af.czu.cz</email>
+      <name>Ehouman Evans, PhD</name>
+      <email>ehoumanevans@gmail.com</email>
     </contributor>
     <category citation-format="author-date"/>
     <category field="botany"/>
     <category field="science"/>
     <category field="zoology"/>
-    <updated>2016-04-03T09:57:47+00:00</updated>
+    <updated>2020-04-08T09:57:47+00:00</updated>
     <rights license="http://creativecommons.org/licenses/by-sa/3.0/">This work is licensed under a Creative Commons Attribution-ShareAlike 3.0 License</rights>
   </info>
   <locale>
     <terms>
       <term name="and">et</term>
+      <term name="et-al">et al.</term>
+
+
     </terms>
   </locale>
   <macro name="container-contributors">
@@ -54,13 +57,13 @@
         </group>
       </if>
     </choose>
-  </macro>
-  <macro name="author">
-    <names variable="author">
-      <name delimiter-precedes-last="always" initialize-with=". " name-as-sort-order="all"/>
-      <label form="short" prefix=" (" suffix=")" text-case="capitalize-first"/>
-      <substitute>
-        <names variable="editor"/>
+   </macro>
+   <macro name="author">
+     <names variable="author">
+       <name delimiter-precedes-last="always" initialize-with=". " name-as-sort-order="all" sort-separator=" "/>
+       <label form="short" prefix=" (" suffix=")" text-case="capitalize-first"/>
+       <substitute>
+         <names variable="editor"/>
         <names variable="translator"/>
         <choose>
           <if type="report">
@@ -77,6 +80,9 @@
   <macro name="author-short">
     <names variable="author">
       <name form="short" and="text" initialize-with=". "/>
+      <et-al term="et-al" font-style="italic"/>
+
+
       <substitute>
         <names variable="editor"/>
         <names variable="translator"/>
@@ -131,6 +137,7 @@
       </if>
       <else>
         <choose>
+
           <if variable="DOI"/>
           <else>
             <choose>
@@ -161,7 +168,7 @@
     <choose>
       <if type="book graphic manuscript motion_picture report song speech thesis" match="any">
         <choose>
-          <if variable="version" type="book" match="all">
+          <if variable="version" type="book" match="all" >
             <text variable="title"/>
           </if>
           <else>
@@ -277,8 +284,8 @@
                   </else>
                 </choose>
                 <text variable="publisher"/>
-                <text variable="number-of-pages" prefix="p. "/>
-                <text variable="ISBN" prefix="ISBN: "/>
+                <text variable="number-of-pages" prefix="pp. "/>
+
               </group>
             </if>
           </choose>
@@ -318,7 +325,7 @@
         <choose>
           <if variable="issued">
             <group prefix=" ">
-              <date variable="issued" suffix=". ">
+              <date variable="issued" prefix="(" suffix="). ">
                 <date-part name="year"/>
               </date>
               <text variable="year-suffix"/>
@@ -408,9 +415,9 @@
   <macro name="locators">
     <choose>
       <if type="article-journal article-magazine" match="any">
-        <group delimiter=". " prefix=". ">
+        <group delimiter=": " prefix=" ">
           <group>
-            <text variable="volume" font-style="normal" suffix=" "/>
+            <text variable="volume" font-style="normal" font-weight="bold"  suffix=" "/>
             <text variable="issue" prefix="(" suffix=")"/>
           </group>
           <text variable="page" form="short" strip-periods="false"/>
@@ -558,7 +565,8 @@
       <key macro="author"/>
       <key macro="issued-sort"/>
     </sort>
-    <layout prefix="(" suffix=")" delimiter="; ">
+
+      <layout prefix="(" suffix=")" delimiter="; ">
       <group delimiter=", ">
         <text macro="author-short"/>
         <text macro="issued-year"/>
@@ -574,7 +582,7 @@
     </sort>
     <layout>
       <group suffix=".">
-        <group>
+        <group suffix=",">
           <text macro="author"/>
           <text macro="issued"/>
           <text macro="title-plus-extra"/>
@@ -582,7 +590,7 @@
         </group>
         <text macro="legal-cites"/>
         <text macro="locators"/>
-        <group delimiter=", " prefix=". ">
+        <group delimiter=", " prefix=" ">
           <text macro="event"/>
           <text macro="publisher"/>
         </group>
@@ -591,4 +599,4 @@
       <text macro="original-date" prefix=" "/>
     </layout>
   </bibliography>
-</style>
+  </style>
