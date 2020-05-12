@@ -1,3 +1,3 @@
 # CitationStyle
 
-Citation style used for my Phd. It matches with the one of my Departement (UFR SN) at Université Nangui Abrogoua, Abidjan, Côte d'Ivoire.
+This citation style matches with the one of Science de la Nature Departement (UFR SN) at Université Nangui Abrogoua, Abidjan, Côte d'Ivoire. Citation style used for my Phd. 
