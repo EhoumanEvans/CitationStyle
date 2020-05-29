@@ -588,8 +588,8 @@
           <text macro="publisher"/>
         </group>
       </group>
-      <text macro="access" prefix=" "/>
-      <text macro="original-date" prefix=" "/>
+     <text macro="access" prefix=" "/>
+     <text macro="original-date" prefix=" "/>
     </layout>
   </bibliography>
 </style>
