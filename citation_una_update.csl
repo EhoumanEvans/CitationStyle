@@ -559,7 +559,7 @@
     <key macro="issued-sort" sort="ascending"/> <!-- Sort by year (oldest to newest) -->
     <key macro="author"/> <!-- Secondary sorting by author -->
   </sort>
-  <layout font-style="normal" font-weight="normal" delimiter=" ; " prefix="(" suffix=")">
+  <layout font-style="normal" font-weight="normal" font-weight="bold" delimiter=" ; " prefix="(" suffix=")">
     <group delimiter=", ">
       <text macro="author-short"/>
       <text macro="issued-year"/>
